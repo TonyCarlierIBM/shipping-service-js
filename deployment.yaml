@@ -4,6 +4,7 @@ metadata:
   labels:
     app: shipping-service
   name: shipping-service
+  namespace: lab-cnb-22
 spec:
   replicas: 1
   template:
@@ -12,7 +13,7 @@ spec:
         app: shipping-service
     spec:
       containers:
-      - image: uk.icr.io/lab-cnb/shipping-service-XX
+      - image: uk.icr.io/lab-cnb/shipping-service-22
         name: shipping-service
         ports:
         - name: app-port
